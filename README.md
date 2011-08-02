@@ -82,7 +82,7 @@ end
 ``` ruby
 :cli => "-f nested"         # pass arbitrary Jessie CLI arguments, default: "-f progress"
 :notification => false      # don't display Growl (or Libnotify) notification after the specs are done running, default: true
-
+```
 
 Development
 -----------
