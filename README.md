@@ -1,7 +1,11 @@
 Guard::Jessie
 =============
 
+[![Build Status](http://travis-ci.org/mehowte/guard-jessie.png)](http://travis-ci.org/mehowte/guard-jessie)
+
+
 Jessie guard allows to automatically run you jasmine specs under node using jessie runner.
+
 
 Install
 -------
