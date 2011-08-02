@@ -1,0 +1,19 @@
+guard 'jessie' do
+
+  # Standard node project
+  watch(%r{^spec/.+(_spec|Spec)\.(js|coffee)$})
+  watch(%r{^lib/(.+)\.(js|coffee)$}) { |m| "spec/lib/#{m[1]}_spec.js" }
+  watch('spec/spec_helper.js') { "spec" }
+
+  # Typical Rails (version < 3.1) app
+  watch(%r{^spec/javascripts/.+(_spec|Spec)\.(js|coffee)$})
+  watch(%r{^public/javascripts/(.+)\.(js|coffee)$}) { |m| "spec/javascripts/#{m[1]}_spec.js" }
+  watch('spec/spec_helper.js') { "spec" }
+
+  # Typical Rails (version >= 3.1) app 
+  watch(%r{^spec/javascripts/.+(_spec|Spec)\.(js|coffee)$})
+  # you'll want to make adjustments to the rule below if you don't use coffeescript in your tests ;)
+  watch(%r{^app/assets/javascripts/(.+)\.(js|coffee)$}) { |m| "spec/javascripts/#{m[1]}_spec.coffee" }
+  watch('spec/spec_helper.js') { "spec" }
+end
+

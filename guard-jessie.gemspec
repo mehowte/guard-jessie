@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path("../lib", __FILE__)
-require "guard-jessie/version"
+require "guard/jessie"
 
 Gem::Specification.new do |s|
   s.name        = "guard-jessie"
@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.email       = ["mtaszycki@gmail.com"]
   s.homepage    = "https://github.com/mehowte/guard-jessie"
   s.summary     = %q{Guard gem for jessie}
-  s.description = %q{Guard::Jessie automatically runs you jasmine specs through jessie driver}
+  s.description = %q{Guard::Jessie automatically runs your jasmine specs through jessie driver}
 
   s.rubyforge_project = "guard-jessie"
 
@@ -18,7 +18,6 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency 'bundler', '~> 1.0'
   s.add_development_dependency 'rspec', '~> 2.6'
-  s.add_development_dependency 'guard-ego'
   s.add_development_dependency 'guard-bundler'
   s.add_development_dependency 'guard-rspec'
 
