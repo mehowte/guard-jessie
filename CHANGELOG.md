@@ -5,4 +5,10 @@
 - Running all specs ([@mehowte])
 - Running selected paths ([@mehowte])
 
+## 0.1.1 - July 3, 2011
+
+### Improvements:
+
+- Travis configuration added. ([@mehowte])
+
 [@mehowte]: https://github.com/mehowte
