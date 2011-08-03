@@ -3,7 +3,6 @@ require 'guard/guard'
 
 module Guard
   class Jessie < Guard
-    autoload :VERSION, 'guard/jessie/version'
     autoload :Runner,  'guard/jessie/runner'
 
     def run_all
