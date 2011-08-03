@@ -1,5 +1,5 @@
 module Guard
-  class Jessie
+  class JessieVersion
     VERSION = "0.1.0"
   end
 end

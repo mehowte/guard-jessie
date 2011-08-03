@@ -4,7 +4,7 @@ require "guard/jessie/version"
 
 Gem::Specification.new do |s|
   s.name        = "guard-jessie"
-  s.version     = Guard::Jessie::VERSION
+  s.version     = Guard::JessieVersion::VERSION
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Michał Taszycki"]
   s.email       = ["mtaszycki@gmail.com"]
