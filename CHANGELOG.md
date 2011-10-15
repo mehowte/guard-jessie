@@ -11,4 +11,10 @@
 
 - Travis configuration added. ([@mehowte])
 
+## 0.1.2 - October 15, 2011
+
+### Improvements:
+
+- Run only changed paths. ([@mehowte])
+
 [@mehowte]: https://github.com/mehowte
