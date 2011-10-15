@@ -9,11 +9,15 @@ module Guard
         subject.run_all
       end
     end
+
     describe "#run_on_change" do
-      it "runs changed files" do
-        Jessie::Runner.should_receive(:run).with(paths)
+      it "runs all existing paths" do
+        File.stub(:exists?) { true }
+        File.stub(:exists?).with(paths[1]) { false }
+        Jessie::Runner.should_receive(:run).with(paths - [paths[1]])
         subject.run_on_change paths
       end
     end
+
   end
 end

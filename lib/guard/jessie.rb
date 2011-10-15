@@ -11,9 +11,11 @@ module Guard
     end
 
     def run_on_change paths
-      paths_string = paths.map {|path| "#{path}" }.join(' ')
-      puts "Running #{paths_string}"
-      Runner.run paths
+      paths = paths.select {|path| File.exists?(path) }
+      if paths.any?
+        puts "Running #{paths.join(' ')}"
+        Runner.run paths
+      end
     end
   end
 end

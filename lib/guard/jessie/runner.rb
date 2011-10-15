@@ -15,6 +15,7 @@ module Guard
 
           cmd_parts.join(" ")
         end
+
     end
   end
 end
