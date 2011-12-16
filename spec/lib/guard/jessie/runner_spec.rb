@@ -16,7 +16,6 @@ module Guard
           )
           subject.run(multiple_paths)
         end
-
       end
 
     end
