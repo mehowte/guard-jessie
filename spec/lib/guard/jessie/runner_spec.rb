@@ -12,7 +12,7 @@ module Guard
       context "when passed multiple paths" do
         it "runs jessie with those paths" do
           subject.should_receive(:system).with(
-            "jessie -f progress /spec ./spec/something.js ../spec/something_else.js other_thing.js"
+            /.* -f progress \/spec \.\/spec\/something.js \.\.\/spec\/something_else\.js other_thing\.js/
           )
           subject.run(multiple_paths)
         end
