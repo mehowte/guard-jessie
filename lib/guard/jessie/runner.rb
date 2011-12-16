@@ -16,6 +16,8 @@ module Guard
           cmd_parts.join(" ")
         end
 
+        # TODO: Memoize, write integration tests checking that filesystem is
+        # not being hit more than once.
         def self.jessie_path
           local_jessie = './node_modules/jessie/bin/jessie'
           global_jessie = 'jessie'
