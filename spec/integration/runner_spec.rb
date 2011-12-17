@@ -14,7 +14,7 @@ module Guard
 
         it "Uses local Jessie" do
           Runner.should_receive(:system).with(
-            /^\.\/node_modules\/jessie\/bin\/jessie .*$/
+            %r{^\./node_modules/jessie/bin/jessie .*$}
           )
           Runner.run %w[spec]
         end
