@@ -2,3 +2,9 @@
 .bundle
 Gemfile.lock
 pkg/*
+
+# vim temp files
+*.swp
+
+# npm local libraries
+node_modules/
